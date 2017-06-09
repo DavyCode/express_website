@@ -18,14 +18,14 @@ html(lang='en')
               span.icon-bar
               span.icon-bar
               span.icon-bar
-            a.navbar-brand(href='#') Project name
+            a.navbar-brand(href='#') Express-Website
           #navbar.collapse.navbar-collapse
-            ul.nav.navbar-nav
-              li.active
+            ul.nav.navbar-nav.navbar-right
+              li(class=(title === 'Home'? 'active': ''))
                 a(href='#') Home
-              li
+              li(class=(title === 'About'? 'active': ''))
                 a(href='#about') About
-              li
+              li(class=(title === 'Contact'? 'active': ''))
                 a(href='#contact') Contact
           // /.nav-collapse
     block content
