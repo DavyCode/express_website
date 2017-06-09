@@ -1,8 +1,26 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.main-body {
+    padding-top: 50px;
+    /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
+    font: 14px "Baloo", Cursive;
+    line-height: 1.42857143;
 }
 
-a {
-  color: #00B7FF;
+.jumbotron {
+    background: url(../images/1.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+
+footer {
+    background: #f4f4f4;
+    height: 40px;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 10px;
+    overflow: auto;
+}
+
+
+/*a {
+    color: #00B7FF;
+}*/

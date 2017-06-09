@@ -8,6 +8,8 @@ var nodemailer = require('nodemailer');
 
 
 var index = require('./routes/index');
+var about = require('./routes/about');
+var contact = require('./routes/contact');
 // var users = require('./routes/users');
 
 var app = express();
@@ -25,6 +27,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
+app.use('/about', about);
+app.use('/contact', contact);
 // app.use('/users', users);
 
 // catch 404 and forward to error handler
